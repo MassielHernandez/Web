@@ -1,0 +1,106 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Menu a Bootstarp  Website Template | Home :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/move-top.js"></script>
+       <script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+</head>
+<body>
+<!-- header -->
+	<div class="banner">
+		<div class="container">
+			<div class="header">
+				<div class="menu">												
+						<a href="#" class="right_bt" id="activator"><img src="images/menu.png" alt=""/></a>
+							<div class="box" id="box">
+								<div class="box_content">
+								   <div class="menu_box_list">
+									   <ul>
+										   <li class="active"><a href="#home" class="scroll">home</a></li>
+											<li><a href="#about" class="scroll">About us</a></li>
+											<li><a href="#services" class="scroll">Services</a></li>
+											<li><a href="#portfolio" class="scroll"> Shop </a></li>
+											<li><a href="#contact-us" class="scroll">contact </a></li>
+												<div class="clearfix"></div>
+										</ul>
+									</div>
+									<a class="boxclose" id="boxclose"><img src="images/close.png" alt=""/></a>
+								</div>                
+							</div>
+							<script type="text/javascript" src="js/easing.js"></script>
+								 <script type="text/javascript">
+										var $ = jQuery.noConflict();
+											$(function() {
+												$('#activator').click(function(){
+														$('#box').animate({'top':'0px'},500);
+												});
+												$('#boxclose').click(function(){
+														$('#box').animate({'top':'-700px'},500);
+												});
+											});
+											$(document).ready(function(){
+											
+											//Hide (Collapse) the toggle containers on load
+											$(".toggle_container").hide(); 
+											
+											//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+											$(".trigger").click(function(){
+												$(this).toggleClass("active").next().slideToggle("slow");
+												return false; //Prevent the browser jump to the link anchor
+											});
+											
+											});
+										</script>
+				</div> 
+				
+						<div class="clearfix"></div>
+			</div>
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+
+			</div>
+			<div class="banner-info">
+				
+			</div>
+		</div>
+	</div>
+<!-- header -->
+<!-- content -->	
+
+<!-- footer -->
+</body>
+</html>
+				
