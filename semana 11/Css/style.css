@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 244, 223);
+}
+
+#c {
+  display: block;
+  margin: 0 auto;
+  margin: calc(50vh - 250px) auto;
+}
